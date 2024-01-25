@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @AllArgsConstructor
-public class CustomerBatchController {
+public class CustomerBatchController  {
     private final JobLauncher jobLauncher;
     private final Job job;
 

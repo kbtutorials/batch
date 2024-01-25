@@ -1,0 +1,10 @@
+openapi: "3.0.2"
+info:
+  title: Api generator
+  version: 1.0.0
+  description: about project
+servers:
+  - url: http://localhost:9013
+paths:
+  /start-batch:
+    $ref: "./controller/batch.yml"
