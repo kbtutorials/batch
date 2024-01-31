@@ -1,10 +1,14 @@
 openapi: "3.0.2"
 info:
   title: Api generator
-  version: 1.0.0
+  version: "1.0.0"
   description: about project
 servers:
   - url: http://localhost:9013
 paths:
   /start-batch:
     $ref: "./controller/batch.yml"
+  /csv-xml:
+    $ref: "./controller/csv-to-xml.yml"
+  /csv-to-xml-convert:
+    $ref: "./controller/csv-to-xml-conversion.yml"

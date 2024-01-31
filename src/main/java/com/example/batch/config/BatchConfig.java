@@ -84,7 +84,7 @@ public class BatchConfig {
         return asyncTaskExecutor;
     }
 
-    @Bean
+    @Bean(name="csvJob")
     public Job job(JobRepository jobRepository, PlatformTransactionManager transactionManager){
         return new JobBuilder("csv-job",jobRepository)
                 .flow(step(jobRepository,transactionManager)).end().build();

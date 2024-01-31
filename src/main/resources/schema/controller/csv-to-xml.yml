@@ -1,0 +1,22 @@
+post:
+  tags:
+    - csv-to-xml
+  summary: running batch file
+  description: It will load csv file to db
+  operationId: csvToXml
+  requestBody:
+    content:
+      multipart/form-data:
+        schema:
+          type: object
+          properties:
+            file:
+              type: string
+              format: binary
+  responses:
+    '200':
+      description: ''
+      content:
+        application/json:
+          schema:
+            type: string

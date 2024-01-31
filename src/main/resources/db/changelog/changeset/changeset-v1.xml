@@ -13,7 +13,7 @@
             <column name="id" type="int">
                 <constraints primaryKey="true"/>
             </column>
-            <column name="firstName" type="varchar(255)"></column>
+            <column name="first-name" type="varchar(255)"></column>
             <column name="last-name" type="varchar(255)"></column>
             <column name="email" type="varchar(255)"></column>
             <column name="gender" type="varchar(255)"></column>
@@ -22,27 +22,8 @@
             <column name="dob" type="varchar(255)"></column>
         </createTable>
     </changeSet>
-    <changeSet id="2" author="karthik">
-        <insert tableName="CUSTOMER_INFO_BATCH">
-            <column name="id" value="0" />
-            <column name="firstName" value="123" />
-            <column name="last-name" value="cfdfjd" />
-            <column name="email" value="fdjfdj@gmail.com" />
-        </insert>
-    </changeSet>
-    <changeSet author="karthik" id="3::dataForTable" labels="data">
-        <loadData file="./customers.csv" tableName="CUSTOMER_INFO_BATCH">
-        <column name="id" header="id"  />
-            <column name="id" header="id"  />
-            <column name="firstName" header="firstName"  />
-            <column name="last-name" header="lastName"  />
-            <column name="email" header="email"  />
-            <column name="gender" header="gender"  />
-            <column name="contact-number" header="contactNo"  />
-            <column name="country" header="country"  />
-            <column name="dob" header="dob"  />
-        </loadData>
-    </changeSet>
+
+
 
 </databaseChangeLog>
 
